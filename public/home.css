@@ -1,6 +1,6 @@
 body {
 	background-color: white;
-	background: url("pictures/anuvis3.jpg") no-repeat right top;
+	background: url("pictures/anuvis3.svg") no-repeat right top;
   background-position: bottom bottom;
 	font-family: Georgia;  
 	color: rgb(56,56,56);
@@ -41,9 +41,11 @@ ol#toc li.current a {
     font-weight: bold;
 }
 
-h1{
-  padding-top: 30px;
+h{
+    padding-top: 30px;
   padding-left: 12px;
+}
+h1{}
 	position: left;
 	left: 10px;
 	top: 0px;
