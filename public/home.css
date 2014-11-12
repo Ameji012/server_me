@@ -73,12 +73,11 @@ h4{
   padding-bottom:20px;	
 }
 
-p2.boxed{
-  lline-height: .3 em; 
-}
 
 ul.social a{
   display: inline-block;
+  list-style: none;
   padding-left:2px;
 
   }
+
