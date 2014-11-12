@@ -1,7 +1,7 @@
 body {
 	background-color: white;
-	background: url("pictures/anuvis3.jpg") no-repeat right;
-  background-position: bottom bottom right;
+	background: url("pictures/anuvis3.jpg") no-repeat right top;
+  background-position: bottom bottom;
 	font-family: Georgia;  
 	color: rgb(56,56,56);
 }
@@ -41,7 +41,7 @@ ol#toc li.current a {
     font-weight: bold;
 }
 
-h1.name{
+h1{
   padding-top: 30px;
   padding-left: 12px;
 	position: left;
@@ -60,9 +60,9 @@ h4{
 }
 
 
-.boxed {
+div.boxed {
   color:  rgb(56,56,56);
-  Height: 145px;
+  Height: 100%;
   Width: 100%;
   max-width: 600px;
   position: relative;
@@ -80,6 +80,7 @@ ul.social{
 }
 
 ul.social li{
+  padding-top: 12px;
   padding-left: 12px;
   display: inline-block;
 }
