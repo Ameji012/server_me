@@ -23,7 +23,7 @@ ol#toc li {
 ol#toc a {
     color: rgb(56,56,56);
     display: block;
-    float: left;
+    /*float: left;*/
     height: 2em;
     line-height: 2em;
     padding-right: 120px;
