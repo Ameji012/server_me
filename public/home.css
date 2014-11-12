@@ -1,8 +1,7 @@
 body {
 	background-color: white;
-	background: url("pictures/anuvis3.jpg") no-repeat;
-	background-position: right center;
-	background-attachment: fixed;
+	background: url("pictures/anuvis3.jpg") no-repeat right;
+  background-position: bottom bottom right;
 	font-family: Georgia;  
 	color: rgb(56,56,56);
 }
@@ -12,16 +11,16 @@ ol#toc {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: inline-block;
 }
 
 ol#toc li {
-    float: left;
     margin: 0 1px 0 0;
     padding-left: 15px;
+    display: inline-block;
 }
 
 ol#toc a {
-    background: url(tabs.gif) 100% 0;
     color: rgb(56,56,56);
     display: block;
     float: left;
@@ -42,10 +41,10 @@ ol#toc li.current a {
     font-weight: bold;
 }
 
-
-h1{
+h1.name{
   padding-top: 30px;
-	position: relative;
+  padding-left: 12px;
+	position: left;
 	left: 10px;
 	top: 0px;
 	text-align: justify;
@@ -53,8 +52,8 @@ h1{
 }
 
 h4{
-	position: relative;
-	left: 10px;
+	position: left;
+	padding-left: 12px;
 	top: 5px;
 	text-align: justify;
   color: (56,56,56);
@@ -63,21 +62,26 @@ h4{
 
 .boxed {
   color:  rgb(56,56,56);
-  border: 0px solid;
   Height: 145px;
-  Width: 600px;
+  Width: 100%;
+  max-width: 600px;
   position: relative;
-	left: 10px;
+	padding-left: 12px;
 	top: 10px;
   border-radius: 1px;
-  padding-bottom:20px;	
+  padding:10px;	
+  background-color: rgba(255,255,255,0.5);
 }
 
+ul.social{
+  padding-top: 12px;
+    list-style: none;
+    padding-left:2px;
+}
 
-ul.social a{
+ul.social li{
+  padding-left: 12px;
   display: inline-block;
-  list-style: none;
-  padding-left:2px;
+}
 
-  }
 
