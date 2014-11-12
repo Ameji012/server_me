@@ -45,6 +45,7 @@ ol#toc li.current a {
 h1{
 	position: left;
 	padding-left: 12px;
+  padding-top: 20px;
 	top: 10px;
 	text-align: justify;
   color: (56,56,56);
