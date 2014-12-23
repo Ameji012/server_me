@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sassy Sinatra</title>
+    <title>Welcome</title>
     <%= css :main %>
   </head>
 
+
+<ul class="navigation">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Portfolio</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Blog</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
+ 
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+ 
+<div class="site-wrap">
   <body>
   <header>
+
+    <!-- insert the rest of your page markup here -->
+
     <h1>Welcome</h1>
+
+
   </header>
   <section>
+
+
     <%= yield %>
+
+
   </section>
+
   <footer>
     <small>&copy; <%= Time.now.year %> Anuvis Mejia.</small>
   </footer>
@@ -24,10 +47,8 @@
 
   ga('create', 'UA-56820075-1', 'auto');
   ga('send', 'pageview');
-
   </script>
 
-
-  
+</div>
   </body>
 </html>
