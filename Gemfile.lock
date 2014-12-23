@@ -23,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   sass
   sinatra
   sinatra-assetpack
