@@ -1,4 +1,12 @@
 /* Navigation Menu - Background */
+body {
+  background-color: white;
+  background: url("pictures/anuvis3.svg") no-repeat right;
+  background-position: bottom bottom;
+  font-family: Georgia;  
+  color: rgb(56,56,56);
+}
+
 .navigation {
   /* critical sizing and position styles */
   width: 100%;
@@ -99,7 +107,12 @@ body {
 
 /* Additional non-critical styles */
 
-h1, h3, p {
+h1, h3, h4, p,{
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+.social, footer{
   max-width: 600px;
   margin: 0 auto 1em;
 }
