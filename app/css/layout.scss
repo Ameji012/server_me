@@ -134,7 +134,7 @@ section{
   display: block;
 }
 
-//Image boxes for website portfoios
+//Image boxes for website port
 .image-box-wrapper {
   width:642px;
   margin:50px auto;
@@ -146,8 +146,8 @@ section{
   overflow:hidden;
   background-color:white;
   border:1px solid #ccc;
-  float:left;
   margin:1px 1px;
+  float:left;
   font:normal normal 12px/1.4 Segoe,"Segoe UI",Arial,Sans-Serif;
   color:#333;
 }
@@ -155,8 +155,7 @@ section{
 .image-container,
 .image-details {
   height:150px;
-  border:5px solid white;
-  background-color:white;
+  padding:5px 5px;
   -webkit-transition:margin-top .4s ease-out .4s;
   -moz-transition:margin-top .4s ease-out .4s;
   -ms-transition:margin-top .4s ease-out .4s;
@@ -180,7 +179,7 @@ section{
 .image-details p {
   margin:0 0 .2em;
   padding:0 0;
-  height:70px;
+  
 }
 
 .image-details h4 {
@@ -222,11 +221,23 @@ section{
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
+  -webkit-filter: contrast(1);
+  filter: contrast(1);
 
   h2, p, h3{
     color: white;
+    background:rgba(7,7,7,.3);
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
 
   }
+
+
+
 }
 
 
