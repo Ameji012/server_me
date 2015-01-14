@@ -214,7 +214,10 @@ section{
 
 
 #home, #about, #blog{
-  background: #ddd url('http://i.imgur.com/XWUGgek.jpg') no-repeat;
+  background:
+linear-gradient(hsl(0, 0%, 10%) 2%, rgba(255,255,255,0) 50%),
+url('http://i.imgur.com/XWUGgek.jpg')no-repeat;
+  
   background-position:center right;
   background-attachment:fixed;
   background-color: white;
@@ -276,7 +279,7 @@ ul li {
 }
 
 ul li:hover {
-  background-color:#f0f3fb;
+  background-color:rgba(255,255,255,0.2);
 }
 
 .user, .tweet, .timePosted {
