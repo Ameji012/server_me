@@ -136,8 +136,9 @@ section{
 
 //Image boxes for website port
 .image-box-wrapper {
-  width:642px;
+  width:1000px;
   margin:50px auto;
+  padding-left: 4em;
 }
 
 .image-box {
@@ -349,6 +350,13 @@ ul li:hover {
 }
 }
 
+.name{
+  font-size: 320%;
+}
+
+#header, #summary{
+  font-size: 100%;
+}
 
 
 
