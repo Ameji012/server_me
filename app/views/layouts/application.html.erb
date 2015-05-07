@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="ROBOTS" content="NOODP" />
-  <meta name="viewport" content="initial-scale=1" />
-  <%#
-    Configure default and controller-, and view-specific titles in
-    config/locales/en.yml. For more see:
-    https://github.com/calebthompson/title#usage
-  %>
-  <title><%= title %></title>
-  <%= stylesheet_link_tag :application, media: "all" %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="<%= body_class %>">
-  <%= render "flashes" -%>
-  <%= yield %>
-  <%= render "javascript" %>
-</body>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="ROBOTS" content="NOODP" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <%# Configure default and controller-, and view-specific titles in config/locales/en.yml. For more see: https://github.com/calebthompson/title#usage %>
+    <title><%= title %></title>
+
+    <%= stylesheet_link_tag :application, media: "all" %>
+    <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
+
+    <!-- Fonts -->
+      <script src="//use.typekit.net/zdl1usf.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+    <!-- Fonts End -->
+
+
+    <%= csrf_meta_tags %>
+
+  </head>
+
+  <body>
+
+    <header>
+      <%= render 'layouts/nav' %>
+    </header>
+
+
+    <div id="fullpage">
+
+      <%= yield %>
+
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#fullpage').fullpage();
+      });
+    </script>
+
+    <%= javascript_include_tag 'application-btm' %>
+
+  </body>
 </html>

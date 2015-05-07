@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require turbolinks
+//= require bootstrap-sprockets
+//= require jquery.easings.min
+//= require jquery.slimscroll.min
+//= require jquery.fullPage.js
+//= require jquery.validate.min
+//= require jquery-validate.bootstrap-tooltip

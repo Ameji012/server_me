@@ -1,3 +1,7 @@
+$gold: #cdb475;
+$lgold: #e5d6b2;
+$octin: "octin-college",sans-serif;
+
 @charset "utf-8";
 
 @import "normalize-rails";
@@ -6,3 +10,78 @@
 @import "neat";
 @import "base/base";
 @import "refills/flashes";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "jquery.fullPage";
+
+
+h1,h2,h3,h4,h5,p,ul,li,a{font-family: $octin;}
+
+header {
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0,0,0,0.1);
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.v-align {
+  position: relative;
+  top: 200px;
+}
+
+.main-header {
+  position: relative;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.logo-container {
+  position: absolute;
+  width: 100px;
+  left: 40px;
+  top: 5px;
+}
+.nav-links {
+  position: absolute;
+  right: 0;
+}
+
+.btn-oye {
+  color: black;
+  border: solid 2px black;
+  background: transparent;
+  border-radius: 0px;
+  transition: all .2s;
+  font-weight: 600;
+  &:hover {
+    color: $gold;
+    background: black;
+    border-radius: 0px;
+    border: solid 2px black;
+  }
+}
+
+.intro {
+  background: -webkit-radial-gradient($lgold, $gold); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient($lgold, $gold); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient($lgold, $gold); /* For Firefox 3.6 to 15 */
+  background: radial-gradient($lgold, $gold); /* Standard syntax */
+  // background: $gold;
+  h1 {
+    margin-top: 0px;
+    font-size: 80px;
+  }
+  h5 {
+    margin-bottom: -10px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  p {font-size:25px;}
+}
