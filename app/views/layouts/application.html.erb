@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    Access-Control-Allow-Origin: http://anuvism.com
     <meta charset="utf-8" />
     <meta name="ROBOTS" content="NOODP" />
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -10,6 +10,15 @@
 
     <%= stylesheet_link_tag :application, media: "all" %>
     <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
+    <script type="text/javascript">
+      $.ajax({
+        url: "http://anuvism.com",
+        crossDomain: true,
+        xhrFields: {
+          withCredentials: true
+        }
+      })
+    </script>
 
     <!-- Fonts -->
       <script src="//use.typekit.net/zdl1usf.js"></script>

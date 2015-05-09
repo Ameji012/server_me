@@ -19,12 +19,3 @@
 //= require jquery.fullPage.js
 //= require jquery.validate.min
 //= require jquery-validate.bootstrap-tooltip
-
-
-$.ajax({
-  url: "http://anuvism.com",
-  crossDomain: true,
-  xhrFields: {
-    withCredentials: true
-  }
-})
