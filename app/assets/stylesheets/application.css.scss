@@ -14,7 +14,8 @@ $octin: "octin-college",sans-serif;
 @import "bootstrap";
 @import "jquery.fullPage";
 @import "font-awesome";
-
+@import "owl.carousel";
+@import "owl.theme";
 
 h1,h2,h3,h4,h5,p,ul,li,a{font-family: $octin;}
 header {
@@ -105,6 +106,22 @@ h1 {
 .intro-image{
   width: 200px;
   border-radius:100%;
+}
+
+.education{
+  background: url(image-path("edu_background.jpg"));
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  color:white;
+  a {
+    color:white;
+  }
+  a:hover{
+    color: #808080;
+  }
 }
 
 .contact{

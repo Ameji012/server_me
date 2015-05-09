@@ -39,21 +39,60 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="section skills" data-anchor="page4">
+<div class="section education" data-anchor="page4">
+  <div class="bkg"></div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
         <h1>Education</h1>
+        <div class="education-carousel">
+          <div> 
+            <h2>Wyncode Academy</h2>
+            <h5>Accelerated Web Development Program</h5>
+            <p><strong>2014-2015</strong></p>
+            <p>Wyncode Academy is a development boot camp immersing ambitious individuals in a demanding and inspiring learning environment engineered to develop successful coders with business acumen. We believe in promoting programming literacy using a disruptive education model and feel that a boot camp environment is the best way to learn practical and relevant coding skills quickly. http://www.wyncode.co/</p>
+          </div>
+          <div> 
+            <h2>Florida International University</h2>
+            <h5>Criminal Justice and Corrections</h5>
+            <p><strong>2007-2011</strong></p>
+          </div>
+        </div>
         <br>
         <a href="#page5" class="btn btn-oye">More</a>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
-<div class="section contact" data-anchor="page5">
+<div class="section skills" data-anchor="page5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1>Skills</h1>
+        <h5>A concise list of some of the most valuable professional skills I possess. My tricks of the trade and what I can bring to the table.</h5>
+        <div class="skills-carousel">
+          <div>Ruby</div>
+          <div>Postgress</div>
+          <div>MySQL</div>
+          <div>Ruby on Rails</div>
+          <div>Jquery/Javascript</div>
+          <div>CSS/SASS</div>
+          <div>Git/Github</div>
+          <div>Heroku</div>
+          <div>Active Record</div>
+          <div>Agile/Lean</div>
+        </div>
+        <br>
+        <a href="#page6" class="btn btn-oye">More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section contact" data-anchor="page6">
   <div class="bkg"></div>
   <div class="container-fluid">
     <div class="col-sm-10 col-sm-offset-1">
@@ -96,6 +135,12 @@
 </section>
 
 <script type="text/javascript">
+$('#new_contact_form').validate({
+    rules: {
+      "contact_form[name]": {required: true},
+      "contact_form[email]": {required: true, email: true}
+    }
+  });
 $('#person_create_form_submit').closest('form').on('ajax:success', function() {
     $(".contact_form_shown").hide()
     $(".contact_form_hidden").fadeIn(500)

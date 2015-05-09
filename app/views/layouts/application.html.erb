@@ -9,24 +9,12 @@
 
     <%= stylesheet_link_tag :application, media: "all" %>
     <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
-    <script type="text/javascript">
-      $.ajax({
-        url: "http://anuvism.com",
-        crossDomain: true,
-        xhrFields: {
-          withCredentials: true
-        }
-      })
-    </script>
-
     <!-- Fonts -->
-      <script src="//use.typekit.net/zdl1usf.js"></script>
-      <script>try{Typekit.load();}catch(e){}</script>
+    <script src="//use.typekit.net/zdl1usf.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <!-- Fonts End -->
 
-
     <%= csrf_meta_tags %>
-
   </head>
 
   <body>
@@ -35,11 +23,8 @@
       <%= render 'layouts/nav' %>
     </header>
 
-
     <div id="fullpage">
-
       <%= yield %>
-
     </div>
 
     <script type="text/javascript">
