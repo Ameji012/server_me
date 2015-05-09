@@ -94,3 +94,14 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+$('#person_create_form_submit').closest('form').on('ajax:success', function() {
+    $(".contact_form_shown").hide()
+    $(".contact_form_hidden").fadeIn(500)
+  })
+  $('#person_create_form_submit').closest('form').on('ajax:error', function() {
+    $('.contact').prepend("<div><h4>Please check your submission.</h4></div>").css('color','red').fadeIn().fadeOut(200)
+    $(this).addClass('shake');
+  })
+</script>

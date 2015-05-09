@@ -33,7 +33,7 @@ module Mywebsite
     config.action_controller.action_on_unpermitted_parameters = :raise
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins 'http://www.anuvism.com'
+        origins 'http://www.anuvism.com/, http://localhost:3000'
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
