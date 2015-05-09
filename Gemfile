@@ -30,6 +30,7 @@ gem "unicorn"
 gem "devise", git: 'https://github.com/plataformatec/devise'
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'font-awesome-rails', '~> 4.3.0.0'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development do
   gem "spring"
