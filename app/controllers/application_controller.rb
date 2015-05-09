@@ -7,6 +7,6 @@ class ApplicationController < ActionController::Base
 
   def set_access_control_headers 
     headers['Access-Control-Allow-Origin'] = 'http://anuvism.com' 
-    headers['Access-Control-Request-Method'] = '*' 
+    headers['Access-Control-Request-Method'] = '*g' 
   end
 end
